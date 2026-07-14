@@ -1,0 +1,19 @@
+{
+  "name": "archive-fs",
+  "version": "1.0.0",
+  "protocol": 1,
+  "description": "Browse tar/zip archives as a read-only filesystem — navigate directories and preview files without extracting.",
+  "exec": ["python3", "./archivefs.py"],
+  "runtime": { "kind": "python" },
+  "capabilities": {
+    "fs": {
+      "schemes": ["archivefs"],
+      "container_exts": ["tar", "tgz", "tbz2", "txz", "zip", "cbz", "jar"],
+      "read_only": true
+    }
+  },
+  "platforms": ["macos", "linux", "windows"],
+  "publisher": "Commander Community",
+  "homepage": "https://github.com/enverbisevac/commander-plugin-archive-fs",
+  "license": "MIT"
+}
